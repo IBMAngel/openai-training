@@ -1,0 +1,5 @@
+Created fine-tune: ft-omXhxyge40i3cdJSvqpVOPkM
+
+openai api fine_tunes.create -t "dataset/data_prepared.jsonl"
+
+openai api completions.create -m davinci -p "what is Edge Computing" 
