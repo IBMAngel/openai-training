@@ -29,7 +29,7 @@ Train custom data with OpenAI API
 
 * Copy env-template.json to .env-local.json and fill in your [OpenAI API Key](https://platform.openai.com/), if you don't already have one, login to your OpenAI account, select your profile icon in the top right, and select "view API keys" to use an existing key or create a new one.
 * Create JSONL file under dataset directory with your custom Prompts and Completions, see dataset/data.jsonl as an example.  From the root repository folder:
-* Run ```NAME=dataset/data.jsonl npm run do:format-data``` to format your dataset
+* Run ```NAME=dataset/mydata.jsonl npm run do:format-data``` to format your dataset
 * Run ```npm run do:upload --name=yourdata_prepared.jsonl``` to upload your dataset 
 * Run ```npm run do:fine-tune --file_id=file-[ex. Evd3NT11somethinglikethis]``` obtain the File ID from upload
 * Run ```npm run do:list``` once the training is completed, you should get ```fine_tuned_model: 'davinci:ft-personal-2023-04-12-00-14-43'``` 
